@@ -4,9 +4,14 @@ public class PedacosDaFrase{
     public static void main(String[] args) {
         try{
             String frase = JOptionPane.showInputDialog("Forneça uma frase");
-            JOptionPane.showMessgaDialog(null, "Frase: " + frase + "\n(0, 2): " +  frase.substring(0, 2) + "\n(3, 8): " + frase.substring(3, 8) + "\n(9, 11):  " + frase.substring(9, 11) + "\n(12, 15): " + frase.substring(12, 15));
+            JOptionPane.showMessageDialog(null, "Frase: " + frase 
+                    + "\n(0, 2): " + frase.substring(0, 2) 
+                    + "\n(3, 8): " + frase.substring(3, 8) 
+                    + "\n(9, 11): " + frase.substring(9, 11) 
+                    + "\n(12, 15): " + frase.substring(12, 15));
         }catch(StringIndexOutOfBoundsException erro){
-            JOptionPane.showMessageDialog(null, "A frase de ter pelo menos 15 caracters \n" + erro.toString());
+            JOptionPane.showMessageDialog(null, "A frase de ter pelo menos 15 caracters \n" 
+                    + erro.toString());
         }
         System.exit(0);
     }
